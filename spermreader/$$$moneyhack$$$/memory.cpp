@@ -17,7 +17,9 @@ memory::memory(const char* processName)
 		{
 			this->id = entry.th32ProcessID;
 			this->process = OpenProcess(PROCESS_ALL_ACCESS, FALSE, this->id);
+			std::cout << "proc id: " << id << std::endl;
 			break;
+			
 		}
 	}
 
